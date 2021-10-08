@@ -19,3 +19,4 @@ Human Genome Center, the Institute of Medical Science, the University of Tokyo
 |  DESeq2  |  https://bioconductor.org/packages/ |
 |  macs2  |  https://github.com/macs3-project/MACS |
 |  Homer  |  http://homer.ucsd.edu/homer/motif/ |
+|  sra-toolkit  |  https://github.com/ncbi/sra-tools |
