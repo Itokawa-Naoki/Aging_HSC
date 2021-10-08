@@ -8,24 +8,14 @@ Human Genome Center, the Institute of Medical Science, the University of Tokyo
 (http://sc.hgc.jp/shirokane.html)
 
 ## Software used in this analysis
-bowtie2 (http://bowtie-bio.sourceforge.net/bowtie2/index.shtml)   
-Tophat2  
-stringtie  
-samtools  
-bedtools  
-R 4.0.2  
-DESeq2  
-macs2  
-Homer  
-
 |  software  |  URL  |
 | ---- | ---- |
 |  bowtie2  |  http://bowtie-bio.sourceforge.net/bowtie2/index.shtml  |
-|  Tophat2 |  TD  |
-|  stringtie |  TD  |
-|  samtools |  TD  |
-|  bedtools |  TD  |
-|  R 4.0.2  |  TD  |
-|  DESeq2  |  TD  |
-|  macs2  |  TD  |
-|  Homer  |  TD  |
+|  Tophat2 |  https://ccb.jhu.edu/software/tophat/index.shtml |
+|  stringtie |  https://ccb.jhu.edu/software/stringtie |
+|  samtools |  http://samtools.sourceforge.net/  |
+|  bedtools |  http://bedtools.readthedocs.io/en/latest/ |
+|  R 4.0.2  |  https://www.r-project.org/ |
+|  DESeq2  |  https://bioconductor.org/packages/ |
+|  macs2  |  https://github.com/macs3-project/MACS |
+|  Homer  |  http://homer.ucsd.edu/homer/motif/ |
