@@ -17,3 +17,10 @@ Homer
 | ---- | ---- |
 |  bowtie2  |  http://bowtie-bio.sourceforge.net/bowtie2/index.shtml  |
 |  Tophat2 |  TD  |
+|  stringtie |  TD  |
+|  samtools |  TD  |
+|  bedtools |  TD  |
+|  R 4.0.2  |  TD  |
+|  DESeq2  |  TD  |
+|  macs2  |  TD  |
+|  Homer  |  TD  |
