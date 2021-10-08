@@ -22,4 +22,4 @@ samtools index sort_accepted_hits.bam
 # calculation of FPKM by stringtie
 stringtie -e -B -p 16 -G _iGenomes-UCSC_genes.gtf -o ${example}.gtf -A ${example}_abd.txt sort_accepted_hits.bam
 
-# The FPKM for each sample are merged and saved in　data/RPKM_StringTie.txt
+# The FPKM for each sample are merged and saved in　data/FPKM_StringTie.txt
