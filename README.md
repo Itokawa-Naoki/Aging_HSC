@@ -5,7 +5,7 @@ All original data have been deposited in NCBI(https://www.ncbi.nlm.nih.gov/geo/q
 ## Environment
 CentOS 7  
 Human Genome Center, the Institute of Medical Science, the University of Tokyo  
-(http://sc.hgc.jp/shirokane.html)
+(https://gc.hgc.jp/en/sys-const/)
 
 ## Software used in this analysis
 |  software  |  URL  |
