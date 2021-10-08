@@ -3,7 +3,7 @@ Hematopoietic stem cells (HSCs) exhibit considerable cell-intrinsic changes with
 All original data have been deposited in NCBI(https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE162662), and the codes used for the analyses are stored in this repository.
 
 ## Software used in this analysis
-bowtie2   
+bowtie2 (http://bowtie-bio.sourceforge.net/bowtie2/index.shtml)   
 Tophat2  
 stringtie  
 samtools  
