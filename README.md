@@ -7,7 +7,7 @@ Tophat2
 stringtie  
 samtools  
 bedtools  
-R 4.0.2 
-DESeq2
-macs2   
+R 4.0.2  
+DESeq2  
+macs2  
 Homer  
