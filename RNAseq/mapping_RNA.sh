@@ -16,4 +16,10 @@ unzip mm10.zip -d ./indexes/
 tophat2 -r 100 -p 1 -G Mus_musculus_UCSC_mm10.gtf indexes "${example}.fastq"
 
 # bam sorting and indexing
-samtools
+samtools sort -O bam -o sort_accepted_hits.bam accepted_hits.bam 
+samtools index sort_accepted_hits.bam
+
+# calculation of FPKM by stringtie
+stringtie -e -B -p 16 -G _iGenomes-UCSC_genes.gtf -o ${example}.gtf -A ${example}_abd.txt sort_accepted_hits.bam
+
+# The FPKM for each sample are merged and saved as　RPKM_StringTie.txt in data directory
