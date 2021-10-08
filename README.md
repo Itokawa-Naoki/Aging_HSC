@@ -12,3 +12,8 @@ R 4.0.2
 DESeq2  
 macs2  
 Homer  
+
+|  TH  |  TH  |
+| ---- | ---- |
+|  bowtie2  |  (http://bowtie-bio.sourceforge.net/bowtie2/index.shtml)  |
+|  TD  |  TD  |
