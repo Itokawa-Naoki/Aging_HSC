@@ -3,4 +3,11 @@ Hematopoietic stem cells (HSCs) exhibit considerable cell-intrinsic changes with
 
 ## Software used in this analysis
 bowtie2 2.1.0  
-Tophat2 
+Tophat2  
+stringtie  
+samtools  
+bedtools  
+R 4.0.2 
+DESeq2
+macs2   
+Homer  
