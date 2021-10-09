@@ -1,0 +1,2 @@
+example="SRR13186609"
+macs2 callpeak -t sorted_${example}_uM.bam -n ${example} -q 0.001 -f BED -g mm --keep-dup all --SPMR --call-summits
