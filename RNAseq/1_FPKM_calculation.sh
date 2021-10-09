@@ -13,8 +13,10 @@ Mus_musculus/UCSC/mm10/Sequence/Bowtie2Index/genome \
 "${example}.fastq"
 
 # bam sorting and indexing
+cd tophat_out
 samtools sort -O bam -o sort_accepted_hits.bam accepted_hits.bam 
 samtools index sort_accepted_hits.bam
+cd ..
 
 # calculation of raw read count for DESeq2 and FPKM by stringtie
-stringtie -e -B -p 16 -G Mus_musculus/UCSC/mm10/Annotation/Archives/archive-2015-07-17-14-33-26/Genes/genes.gtf -o ${example}.gtf -A ${example}_abd.txt sort_accepted_hits.bam
+stringtie -e -B -p 16 -G Mus_musculus/UCSC/mm10/Annotation/Archives/archive-2015-07-17-14-33-26/Genes/genes.gtf -o ${example}.gtf -A ${example}_abd.txt tophat_out/sort_accepted_hits.bam
