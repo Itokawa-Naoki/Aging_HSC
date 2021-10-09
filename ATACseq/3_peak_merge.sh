@@ -1,6 +1,7 @@
-wget 
+wget https://github.com/Itokawa-Naoki/Aging_HSC/raw/main/data/Y_peaks.tar.gz
+wget https://github.com/Itokawa-Naoki/Aging_HSC/raw/main/data/A_peaks.tar.gz
+tar -zxvf Y_peaks.tar.gz
+tar -zxvf A_peaks.tar.gz
 
-zcat  *_q0.001_peaks.narrowPeak.gz | sort -k1,1 -k2,2n > Temp.bed 
+cat  *.narrowPeak | sort -k1,1 -k2,2n > Temp.bed 
 bedtools merge -i Temp.bed > Marged_peak.bed 
-
-bedtools map -a Marged_peak.bed -b ${example}.bed -o count -c 4 -null 0 > mapped_count_${example}.bed
