@@ -11,12 +11,12 @@ Human Genome Center, the Institute of Medical Science, the University of Tokyo
 ## Software used in this analysis
 |  software  |  URL  |
 | ---- | ---- |
-|  bowtie2  |  http://bowtie-bio.sourceforge.net/bowtie2/index.shtml  |
-|  Tophat2 |  https://ccb.jhu.edu/software/tophat/index.shtml |
-|  stringtie |  https://ccb.jhu.edu/software/stringtie |
+|  bowtie2(2.1.0)  |  http://bowtie-bio.sourceforge.net/bowtie2/index.shtml  |
+|  Tophat2(2.0.13) |  https://ccb.jhu.edu/software/tophat/index.shtml |
+|  stringtie(1.3.4) |  https://ccb.jhu.edu/software/stringtie |
 |  samtools |  http://samtools.sourceforge.net/  |
 |  bedtools |  http://bedtools.readthedocs.io/en/latest/ |
-|  R 4.0.2  |  https://www.r-project.org/ |
+|  R (4.0.2)  |  https://www.r-project.org/ |
 |  DESeq2  |  https://bioconductor.org/packages/ |
 |  macs2  |  https://github.com/macs3-project/MACS |
 |  Homer  |  http://homer.ucsd.edu/homer/motif/ |
