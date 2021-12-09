@@ -8,11 +8,11 @@ sd =  999
 set.seed(sd)
 
 young <- read.table(
-  file = "youngPeaks.txt",
+  file = "data/youngPeaks.txt",
   col.names = c("chr", "start", "end")
 )
 aged <- read.table(
-  file = "agedPeaks.txt",
+  file = "data/agedPeaks.txt",
   col.names = c("chr", "start", "end")
 )
 young <- makeGRangesFromDataFrame(young)
@@ -20,14 +20,14 @@ aged <- makeGRangesFromDataFrame(aged)
 combined.peaks <- reduce(x = c(young, aged))
 
 md.young <- read.table(
-  file = "youngHSC/singlecell.csv",
+  file = "GSM5723631_Young_HSC_singlecell.csv",
   stringsAsFactors = FALSE,
   sep = ",",
   header = TRUE,
   row.names = 1
 )[-1, ] # remove the first row
 md.aged <- read.table(
-  file = "agedHSC/singlecell.csv",
+  file = "GSM5723632_Aged_HSC_singlecell.csv",
   stringsAsFactors = FALSE,
   sep = ",",
   header = TRUE,
@@ -38,11 +38,11 @@ md.young <- md.young[md.young$passed_filters > 500, ]
 md.aged <- md.aged[md.aged$passed_filters > 500, ]
 
 frags.young <- CreateFragmentObject(
-  path = "youngHSC/fragments.tsv.gz",
+  path = "GSM5723631_Young_HSC_fragments.tsv.gz",
   cells = rownames(md.young)
 )
 frags.aged <- CreateFragmentObject(
-  path = "agedHSC/fragments.tsv.gz",
+  path = "GSM5723632_Aged_HSC_fragments.tsv.gz",
   cells = rownames(md.aged)
 )
 
@@ -107,11 +107,11 @@ combined <- FindClusters(object = combined, verbose = FALSE,resolution = 0.4, al
 DimPlot(combined, pt.size = 0.1)
 DimPlot(combined, group.by = 'dataset', pt.size = 0.1)
 
-lst <- read.table("combined_DARopen.txt")
+lst <- read.table("data/DARopen_combinedRegion.txt")
 lst <- list(lst[,1])
 combined <- AddModuleScore(object = combined, features = lst, name = 'DARopen_', random.seed = 1)
 
-lst <- read.table("Combined_aged_closeDAR.txt")
+lst <- read.table("data/DARclose_combinedRegion.txt")
 lst <- list(lst[,1])
 combined <- AddModuleScore(object = combined, features = lst, name = 'DARclose_', random.seed = 1)
 
@@ -126,7 +126,7 @@ VlnPlot(
   split.by = "dataset"
 )
 
-pdf(paste0("seed",sd,"_combined_1029.pdf"), width = 6, height = 5)
+pdf(paste0("seed",sd,"_scATAC.pdf"), width = 6, height = 5)
 DimPlot(combined, pt.size = 0.1)
 DimPlot(combined, group.by = 'dataset', pt.size = 0.1)
 FeaturePlot(
@@ -140,4 +140,4 @@ VlnPlot(
 )
 dev.off()
 
-saveRDS(combined,paste0("seed",sd,"_combined.rds"))
+saveRDS(combined,paste0("seed",sd,"_scATAC.rds"))
