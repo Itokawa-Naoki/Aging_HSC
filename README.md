@@ -21,3 +21,6 @@ Human Genome Center, the Institute of Medical Science, the University of Tokyo
 |  macs2  |  https://github.com/macs3-project/MACS |
 |  Homer  |  http://homer.ucsd.edu/homer/motif/ |
 |  sra-toolkit  |  https://github.com/ncbi/sra-tools |
+|  Signac  |  https://satijalab.org/signac/ |
+|  Seurat  |  https://satijalab.org/seurat/ |
+|  Deeptools  |  https://deeptools.readthedocs.io/en/develop/ |
